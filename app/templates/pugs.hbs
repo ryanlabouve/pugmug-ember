@@ -2,9 +2,7 @@ Viewing 1 / {{model.length}}
 {{outlet}}
 
 <ul class="pug-list">
-  {{#each pug in model}}
-    <li><img {{bind-attr src=pug.url alt=put.title}} /><br/>{{pug.title}}</li>
-  {{/each}}
+  {{#each pug in model}}<li><img {{bind-attr src=pug.url alt=put.title}} /></li>{{/each}}
 </ul>
 
 <a href="#">Skip</a>
