@@ -1,3 +1,17 @@
 body {
   background: #efefef;
 }
+
+.pug-list {
+  width: 100000px;
+}
+.pug-list li {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
