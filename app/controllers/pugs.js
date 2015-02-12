@@ -22,7 +22,6 @@ export default Ember.Controller.extend({
     },
     nextPug: function() {
       var next_pug_index;
-      console.log(">>>>>" + this.get('currentPug'), this.get('totalPugs'))
       if( this.get('currentPug') + 1 <= this.get('totalPugs')) {
         next_pug_index = this.get('currentPug') + 1;
       } else {
