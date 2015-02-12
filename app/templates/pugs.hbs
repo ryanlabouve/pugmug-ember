@@ -1,6 +1,15 @@
-Viewing {{currentPug}} / {{totalPugs}}
+
 {{outlet}}
 
+
+<div class="other-container">
+  <div class=" pull-left">
+    Viewing {{currentPug}} / {{totalPugs}}
+  </div>
+  <div class="pull-right">
+    {{pugsInCart}}&nbsp;<i class="fa fa-shopping-cart"></i>
+  </div>
+</div>
 <div class="mug">
   <img src="/mug.jpg" alt="mug"/>
   <div class="pug-list-container">
@@ -11,6 +20,6 @@ Viewing {{currentPug}} / {{totalPugs}}
 </div>
 
 <div class="btn-container clearfix">
-  <a href="#" class="circlebtn circlebtn-skip pull-left" {{action "nextPug"}}><i class="fa fa-repeat"></i></a>
-  <a href="#" class="circlebtn circlebtn-add pull-right" {{action "nextPug"}}><i class="fa fa-shopping-cart"></i></a>
+  <a href="#" class="circlebtn circlebtn-skip pull-left" {{action "skip"}}><i class="fa fa-repeat"></i></a>
+  <a href="#" class="circlebtn circlebtn-add pull-right" {{action "add"}}><i class="fa fa-shopping-cart"></i></a>
 </div>
