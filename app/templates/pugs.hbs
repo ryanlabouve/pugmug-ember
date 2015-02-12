@@ -1,9 +1,16 @@
-Viewing 1 / {{model.length}}
+Viewing {{currentPug}} / {{totalPugs}}
 {{outlet}}
 
-<ul class="pug-list">
-  {{#each pug in model}}<li><img {{bind-attr src=pug.url alt=put.title}} /></li>{{/each}}
-</ul>
+<div class="mug">
+  <img src="/mug.jpg" alt="mug"/>
+  <div class="pug-list-container">
+    <ul class="pug-list" {{bind-attr style=marginLeft}}>
+      {{#each pug in model}}<li><img {{bind-attr src=pug.url alt=put.title}} /></li>{{/each}}
+    </ul>
+  </div>
+</div>
 
-<a href="#">Skip</a>
-<a href="#">Add to cart</a>
+<div class="btn-container clearfix">
+  <a href="#" class="circlebtn circlebtn-skip pull-left" {{action "nextPug"}}><i class="fa fa-repeat"></i></a>
+  <a href="#" class="circlebtn circlebtn-add pull-right" {{action "nextPug"}}><i class="fa fa-shopping-cart"></i></a>
+</div>

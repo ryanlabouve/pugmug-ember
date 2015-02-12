@@ -1,12 +1,19 @@
-body {
-  background: #efefef;
+.pug-list-container {
+  width: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
 }
-
 .pug-list {
   width: 100000px;
+  margin-left: 0;
+  padding-left: 0;
 }
 .pug-list li {
-  width: 300px;
+  width: 250px;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -14,4 +21,46 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.mug {
+  position: relative;
+  width: 750px;
+  margin: auto;
+}
+
+.circlebtn {
+  border: 2px solid #efefef;
+  border-radius: 50%;
+  font-size: 2.1em;
+  display:block;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.circlebtn.circlebtn-skip:link, .circlebtn.circlebtn-skip:visited {
+  color: #ccc;
+}
+
+.circlebtn.circlebtn-skip:hover, .circlebtn.circlebtn-skip:active {
+  color: white;
+  background: #ccc;
+}
+
+.circlebtn.circlebtn-add:link, .circlebtn.circlebtn-add:visited {
+  border: 2px solid #26A65B;
+  color: #26A65B;
+}
+
+.circlebtn.circlebtn-add:hover, .circlebtn.circlebtn-add:active {
+  background: #26A65B;
+  color: white;
+}
+
+.btn-container {
+  margin-top: 1em;
+  width: 200px;
+  margin: auto;
 }
